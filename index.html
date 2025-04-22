@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiomara Harris - Personal Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #7f7df4; /* Periwinkle color */
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .content {
+            margin: 20px;
+        }
+        .card {
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #7f7df4;
+            color: white;
+        }
+        .favorite-color {
+            color: #7f7df4;
+            font-weight: bold;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .favorite-color-box {
+            background-color: #7f7df4;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #7f7df4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .interactive-btn {
+            background-color: #7f7df4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .interactive-btn:hover {
+            background-color: #6a6ee1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Xiomara Harris</h1>
+        <p>Welcome to My Personal Page!</p>
+    </header>
+
+    <div class="content">
+        <!-- Section 1: About Me -->
+        <div class="card">
+            <div class="card-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card-body">
+                <p>Hello, my name is <span class="favorite-color">Xiomara Harris</span>. I have a variety of interests and passions that make me who I am today. Here's a little bit about myself:</p>
+                <ul>
+                    <li><strong>Favorite Color:</strong> <span class="favorite-color">Periwinkle</span></li>
+                    <li><strong>Hobbies:</strong> Cooking, doing hair and nails, makeup</li>
+                    <li><strong>Favorite Artists:</strong> Sza, Megan Thee Stallion, Cardi B, and Latto</li>
+                    <li><strong>Career Choice:</strong> I aspire to be an OBGYN.</li>
+                    <li><strong>Job:</strong> I work at Six Flags!</li>
+                    <li><strong>What I like about YGT:</strong> The food!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 2: Favorite Artists -->
+        <div class="card">
+            <div class="card-header">
+                <h2>My Favorite Artists</h2>
+            </div>
+            <div class="card-body">
+                <p>Music is a huge part of my life, and I absolutely love these artists:</p>
+                <ul>
+                    <li>Sza</li>
+                    <li>Megan Thee Stallion</li>
+                    <li>Cardi B</li>
+                    <li>Latto</li>
+                </ul>
+                <div class="image-gallery">
+                    <img src="https://via.placeholder.com/500x300?text=Sza" alt="Sza" class="img-fluid mb-3">
+                    <img src="https://via.placeholder.com/500x300?text=Megan+Thee+Stallion" alt="Megan Thee Stallion" class="img-fluid mb-3">
+                    <img src="https://via.placeholder.com/500x300?text=Cardi+B" alt="Cardi B" class="img-fluid mb-3">
+                    <img src="https://via.placeholder.com/500x300?text=Latto" alt="Latto" class="img-fluid mb-3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: My Hobbies -->
+        <div class="card">
+            <div class="card-header">
+                <h2>My Hobbies</h2>
+            </div>
+            <div class="card-body">
+                <p>Some of the things I enjoy the most are:</p>
+                <ul>
+                    <li>Cooking delicious meals</li>
+                    <li>Doing hair and nails</li>
+                    <li>Makeup artistry</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Interactive Section -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Interactive Fun!</h2>
+            </div>
+            <div class="card-body">
+                <p>Click the button below to reveal a surprise message:</p>
+                <button class="interactive-btn" onclick="revealMessage()">Click me!</button>
+                <p id="surprise-message" style="display:none; margin-top: 20px; color: #7f7df4; font-weight: bold;">You just revealed a secret! Keep exploring!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Xiomara Harris. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to reveal message -->
+    <script>
+        function revealMessage() {
+            document.getElementById("surprise-message").style.display = "block";
+        }
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
